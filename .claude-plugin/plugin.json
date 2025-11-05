@@ -1,0 +1,24 @@
+{
+  "name": "fs-mv",
+  "description": "Configurable file redirection plugin - automatically redirects files based on patterns",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kierran",
+    "url": "https://github.com/kierr"
+  },
+  "commands": {
+    "redirect:config": "View and manage file redirection configuration",
+    "redirect:validate": "Validate redirection configuration and test patterns"
+  },
+  "hooks": "./hooks/hooks.json",
+  "license": "MIT",
+  "homepage": "https://github.com/kierr/fs-mv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kierr/fs-mv.git"
+  },
+  "keywords": ["file-management", "organization", "automation", "productivity"],
+  "claudeCode": {
+    "minVersion": "1.0.0"
+  }
+}

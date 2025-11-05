@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "description": "File redirection rules configuration",
+  "rules": [
+    {
+      "name": "markdown-docs",
+      "pattern": "*.md",
+      "source_location": "root_only",
+      "destination": "docs/misc",
+      "exclude": ["README.md", "CHANGELOG.md", "LICENSE.md", "CLAUDE.md"],
+      "enabled": true
+    },
+    {
+      "name": "ruby-scripts",
+      "pattern": "*.rb",
+      "source_location": "root_only",
+      "destination": "scripts",
+      "exclude": ["Rakefile", "Gemfile"],
+      "enabled": true
+    },
+    {
+      "name": "test-files",
+      "pattern": "test_*.rb",
+      "source_location": "anywhere",
+      "destination": "tests/unit",
+      "enabled": true
+    },
+    {
+      "name": "config-files",
+      "pattern": "*.config.*",
+      "source_location": "root_only",
+      "destination": "config",
+      "enabled": false
+    }
+  ],
+  "global_settings": {
+    "create_directories": true,
+    "notify_on_redirect": true,
+    "backup_original": false,
+    "case_sensitive": true,
+    "max_redirect_depth": 5
+  },
+  "security": {
+    "blocked_destinations": [
+      "/etc",
+      "/usr",
+      "/bin",
+      "/sbin",
+      "/System",
+      "~/.ssh",
+      "~/.aws"
+    ],
+    "allowed_extensions": ["*"],
+    "max_file_size_mb": 100
+  }
+}
