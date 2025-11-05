@@ -12,10 +12,10 @@
   },
   "hooks": "./hooks/hooks.json",
   "license": "MIT",
-  "homepage": "https://github.com/kierr/fs-mv",
+  "homepage": "https://github.com/kierr/claude-fs-mv",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kierr/fs-mv.git"
+    "url": "https://github.com/kierr/claude-fs-mv.git"
   },
   "keywords": ["file-management", "organization", "automation", "productivity"],
   "claudeCode": {
