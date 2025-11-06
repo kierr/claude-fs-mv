@@ -6,16 +6,18 @@
     "name": "Kierran",
     "url": "https://github.com/kierr"
   },
-  "commands": [
-    {
-      "name": "redirect:config",
-      "description": "View and manage file redirection configuration"
-    },
-    {
-      "name": "redirect:validate",
-      "description": "Validate redirection configuration and test patterns"
-    }
-  ],
+  "components": {
+    "commands": [
+      {
+        "name": "redirect:config",
+        "description": "View and manage file redirection configuration"
+      },
+      {
+        "name": "redirect:validate",
+        "description": "Validate redirection configuration and test patterns"
+      }
+    ]
+  },
   "hooks": "./hooks/hooks.json",
   "license": "MIT",
   "homepage": "https://github.com/kierr/claude-fs-mv",
