@@ -6,19 +6,19 @@
     "name": "Kierran",
     "url": "https://github.com/kierr"
   },
-  "commands": {
-    "redirect:config": "View and manage file redirection configuration",
-    "redirect:validate": "Validate redirection configuration and test patterns"
-  },
+  "commands": [
+    {
+      "name": "redirect:config",
+      "description": "View and manage file redirection configuration"
+    },
+    {
+      "name": "redirect:validate",
+      "description": "Validate redirection configuration and test patterns"
+    }
+  ],
   "hooks": "./hooks/hooks.json",
   "license": "MIT",
   "homepage": "https://github.com/kierr/claude-fs-mv",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kierr/claude-fs-mv.git"
-  },
-  "keywords": ["file-management", "organization", "automation", "productivity"],
-  "claudeCode": {
-    "minVersion": "1.0.0"
-  }
+  "repository": "https://github.com/kierr/claude-fs-mv.git",
+  "keywords": ["file-management", "organization", "automation", "productivity"]
 }
